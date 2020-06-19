@@ -1,0 +1,33 @@
+Anotações
+ Created on: 19 de mai de 2020
+     Author: lucas.rodrigues
+
+   Na lista,  Eu vou ter um tipo de dado, nesse dado, irei armazenar o valor e ela tembem tera 2 auto referencia dele mesmo.
+     Uma referencia apontando para o proximo 
+     Uma referencia apontando para o anterior.
+     
+  Cada elemento aponta para o seu proximo e para o seu anterior.(Duplamente encadeada)
+  A partir do primeiro elemento eu consigo acessar o ultimo, e a partir do ultimo elemento eu consigo acessar o primeiro(circular)
+  Eu consigo fazer o percusso na ordem correta ou na ordem inversa
+  
+  Se a lista estiver nula, o proximo e o anterior aponta pra ele mesmo.
+  Se a lista não estiver nula:
+  O anterior do "inicio" aponta pra o ultimo elemento.
+  O proximo do ultimo elemento aponta pra o inicio.
+  
+  Elementos na minha lista estao sendo armazenados, seguindo uma estrategia
+  
+  Instruções para remover:
+  	(No inicio)
+  o proximo de incio, aponta para o proximo do proximo de inicio.
+  o anterior do proximo de inicio, aponta para o ultimo elemento(o anterior de inicio)
+  o inicio recebe seu proximo
+  o ultimo elemento aponta pra inicio
+    (No meio)
+  O anterior do proximo elemento removido, tem que apontar pro anterior do elemento removido
+  O proximo, do anterior, do elemento removido tem que apontar pro proximo do elemento removido
+  	(No fim)
+  o proximo do anterior de do ultimo, recebe inicio
+  o anterior de inicio, recebe o anterior de ultimo.
+  
+  Em todos os processos o elemento removido deve apontar pra null e depois ser desalocado.
